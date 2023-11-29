@@ -19,7 +19,7 @@ export default function Login() {
     async function loginUser(event){
         event.preventDefault();
         try {
-            const respLogin = await axios.post('http://localhost:4000/api/vt1/login',loginData);
+            const respLogin = await axios.post('https://tweeterback-bqhr.onrender.com/api/vt1/login',loginData);
             if(respLogin.data){
                 localStorage.setItem('myToken',respLogin.data.userToken);
                 localStorage.setItem('userNo',respLogin.data.userNo);
