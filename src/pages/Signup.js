@@ -22,7 +22,7 @@ export default function Signup() {
     async function submitRegister(event){
         event.preventDefault();
         try {
-            const respRegister = await axios.post('http://localhost:4000/api/vt1/register',registerData);
+            const respRegister = await axios.post('https://tweeterback-bqhr.onrender.com/api/vt1/register',registerData);
             if(respRegister.data){
                 sweetAlert.fire({
                     title:respRegister.data.message,
