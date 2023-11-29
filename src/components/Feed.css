@@ -1,0 +1,22 @@
+.feed-body {
+    margin-left: 33vw;
+    width: 43.2vw;
+    height: 100vh;
+}
+.tweet-btn {
+    margin-left: 8vw;
+}
+
+@media (max-width: 900px) {
+    .feed-body {
+        margin-left: 35vw;
+        width: 61vw;
+    }
+}
+@media (max-width: 450px) {
+    .feed-body {
+        margin-left: 0vw !important;
+        margin-top: 10vh;
+        width: 100vw !important;
+    }
+}
